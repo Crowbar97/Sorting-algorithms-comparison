@@ -12,14 +12,14 @@ from sorted_test import test_sort_fun
 
 # SORT FUN TESTING
 def test_sort_funs():
-    # test_sort_fun(bubble_sort)
-    # test_sort_fun(shaker_sort)
-    # test_sort_fun(comb_sort)
-    # test_sort_fun(insertion_sort)
-    # test_sort_fun(selection_sort)
-    # test_sort_fun(merge_sort, True)
+    test_sort_fun(bubble_sort)
+    test_sort_fun(shaker_sort)
+    test_sort_fun(comb_sort)
+    test_sort_fun(insertion_sort)
+    test_sort_fun(selection_sort)
+    test_sort_fun(merge_sort, True)
     test_sort_fun(quick_sort)
-    # test_sort_fun(heap_sort)
+    test_sort_fun(heap_sort)
 
 
 test_sort_funs()
