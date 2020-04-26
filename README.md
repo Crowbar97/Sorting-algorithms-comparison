@@ -8,6 +8,8 @@ This repository provides simple cheatsheet for _sorting algorithms_ in my own im
 - `sorts/` -- contains sorting algorithms.
 
 ## Some results
+![](plots/top_1.png)
+
 ![](plots/top_1_top_2_top_3.png)
 
 ## Sources
