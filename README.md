@@ -13,4 +13,4 @@ This repository provides simple cheatsheet for _sorting algorithms_ in my own im
 ![](plots/top_1_top_2_top_3.png)
 
 ## Sources
-- [Introduction to Algorithms, Third Edition](https://mitpress.mit.edu/books/introduction-algorithms-third-edition)
+- :blue_book: [Introduction to Algorithms, Third Edition](https://mitpress.mit.edu/books/introduction-algorithms-third-edition)
