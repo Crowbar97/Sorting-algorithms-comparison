@@ -18,14 +18,12 @@ def quick_sort_lomuto(a, lb, rb):
 
 def hoare_partition(a, lb, rb):
     pivot = a[(lb + rb) // 2]
-    i, j = lb - 1, rb + 1
+    i, j = lb, rb
     while True:
 
-        i += 1
         while a[i] < pivot:
             i += 1
 
-        j -= 1
         while a[j] > pivot:
             j -= 1
 
@@ -33,6 +31,8 @@ def hoare_partition(a, lb, rb):
             return j
 
         a[i], a[j] = a[j], a[i]
+
+        i += 1; j -= 1
 
 
 def quick_sort_hoare(a, lb, rb):
