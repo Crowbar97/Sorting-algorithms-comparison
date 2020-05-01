@@ -1,19 +1,16 @@
 def merge(left, right):
     res = []
 
-    while len(left) > 0 and len(right) > 0:
+    while left and right:
         # <= - for stability
-        if left[0] <= right[0]:
-            res.append(left.pop(0))
-        else:
-            res.append(right.pop(0))
+        res.append(left.pop(0) if left[0] <= right[0] else right.pop(0))
 
-    res.extend(left)
-    res.extend(right)
+    res.extend(left + right)
 
     return res
 
 
+# TODO: make buffer array init?
 # TODO: sort on passed array?
 def merge_sort(a):
     if len(a) < 2:
@@ -21,14 +18,9 @@ def merge_sort(a):
 
     mid = len(a) // 2
     
-    left = a[:mid]
-    right = a[mid:]
-
-    left = merge_sort(left)
-    right = merge_sort(right)
-
-    res = merge(left, right)
-
-    return res
+    left = merge_sort(a[:mid])
+    right = merge_sort(a[mid:])
+    
+    return merge(left, right)
 
 
